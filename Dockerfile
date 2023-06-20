@@ -14,5 +14,5 @@ ENV LC_ALL ru_RU.UTF-8
 RUN  mkdir /var/www
 RUN  rm -f /etc/nginx/conf.d/default.conf
 COPY site.conf  /etc/nginx/conf.d/
-COPY Landing/. /var/www/
+COPY landing/. /var/www/
 RUN  chown nginx:nginx -R /var/www/
